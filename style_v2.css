@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sigmar&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 :root {
 	--gray: #3b3b3b;
@@ -15,12 +15,12 @@
 	display: grid;
 	grid-template-columns: 500px auto 50px;
 	grid-template-rows: 350px auto 50px;
-	height: 200vh;
+	height: 150vh;
 }
 
 .header {
 	box-sizing: border-box;
-	background-color: grey;
+	background-color: #fcba03;
 	border: 2px solid black;
 	grid-column-start: 1;
 	grid-column-end: span 3;
@@ -64,7 +64,7 @@
 
 .content {
 	box-sizing: border-box;
-	background-color: grey;
+	background-color: #fcba03;
 	border: 2px solid black;
 	position: relative;
 	grid-column-start: 1;
@@ -77,10 +77,10 @@
 	box-sizing: border-box;
 	margin: auto;
 	position: static;
+	bottom: 150px;
 	width: 35%;
     height: 300px;
 	background-color: black;
-	bottom: 40px;
 	left: 32.5%;
 }
 
@@ -91,7 +91,7 @@
 	height: auto;
 	width: 100%;
 	text-align: center;
-	background-color: grey;
+	background-color: #fcba03;
 }
 
 /*STYLING FOR BURGER MENU*/
@@ -182,7 +182,7 @@
 	padding: 80px;
 	padding-top: 125px;
 	
-	background: #ededed;
+	background: #000000;
 	list-style-type: none;
 	-webkit-font-smoothing: antialiased;
 	
@@ -197,6 +197,7 @@
 	padding:10px 0;
 	font-size: 22px;
 	font-family: 'Helvetica Neue Bold';
+	text-align: center;
 }
 
 #menuToggle input:checked ~ ul
@@ -269,7 +270,7 @@
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: var(--backtotop);
+	background-color: #000000;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -283,6 +284,7 @@
 
 /*STYLING FOR TEXT*/
 body {
+	text-align: center;
 	font-family: helvetica, arial, sans-serif;
 	margin: 0;
 }
@@ -290,7 +292,7 @@ body {
 h1 {
 	font-style: bold;
 	color: #ffffff;
-	font-family: "Oswald", sans-serif;
+	font-family: "Fjalla One", sans-serif;
 	letter-spacing: 0.2em;
 	text-shadow: 2px 2px 2px grey;
 }
@@ -311,30 +313,40 @@ h3 {
 p {
 	font-family: "Jost", sans-serif;
 	font-style: normal;
+	color: #000000;
+	padding-left: 10px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+p2 {
+	font-family: "Jost", sans-serif;
+	font-style: normal;
 	color: #ffffff;
 	padding-left: 10px;
 	font-size: 14px;
 }
+/*STYLING FOR CONTACT PAGE*/
+.contact {
+	text-align: left;
+}
 /*STYLING FOR DROP DOWN MENU*/
 ul {
-	display: inline;
-	padding: 15px 0px 0px 0px;
-	list-style: none;
+	padding: 5px 0px 0px 0px;
+  	list-style-type: circle;
 }
 
 ul li {
-	font-family: Arial;
-	font-size: 16px;
+	font-family: "Jost", sans-serif;
+	font-size: 20px;
 	font-weight: bold;
-	display: inline-block;
-	margin-right: -4px;
+	margin-right: 0px;
 	position: relative;
 	padding: 15px 50px 17px;
-}
-ul li:hover {
-	background: var(--gray);
+	text-align: left;
 }
 
+/* Makes the links yellow when hovered over */
 a:link {color:#FFFFFF;}
 a:visited {color:#FFFFFF;}
 a:hover {color:#FFD533;}
@@ -343,27 +355,3 @@ a:active {color:#FFFFFF;}
 a {
 	text-decoration: none;
 }
-
-ul li ul {
-	padding: 0;
-	position: absolute;
-	top: 48px;
-	left: 0;
-	width: 152.5px;
-	display: none;
-	visibility: hidden;
-	z-index: 1;
-}
-
-ul li ul li {
-	background: var(--gray);
-	display: block;
-}
-
-ul li ul li:hover {background: var(--gray)}
-
-ul li:hover ul {
-	display: block;
-	visibility: visible;
-}
-
